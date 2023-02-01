@@ -82,4 +82,6 @@ xcuserdata/
 .vscode/
 local.properties
 
+# Environment Variable
 .env
+Env.swift

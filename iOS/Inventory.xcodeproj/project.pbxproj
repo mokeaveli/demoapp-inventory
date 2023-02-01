@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64C9A00DEB6D1DD41F64EE42 /* libPods-Inventory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDB6A9E7AB16C312CF5308B /* libPods-Inventory.a */; };
+		CC371EF429794A9700430C6F /* DittoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC371EF329794A9700430C6F /* DittoManager.swift */; };
+		CC371EF62979573200430C6F /* ItemDittoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC371EF52979573200430C6F /* ItemDittoModel.swift */; };
+		CC481D6C24B073230007C4D2 /* DittoSDKInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC481D5E24B073230007C4D2 /* DittoSDKInfoViewController.swift */; };
+		CC481D6D24B073230007C4D2 /* DittoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC481D5F24B073230007C4D2 /* DittoInfoViewController.swift */; };
+		CC481D6E24B073230007C4D2 /* DittoInfoView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC481D6024B073230007C4D2 /* DittoInfoView.storyboard */; };
+		CC626BF7298A655B0065E143 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC626BF6298A655B0065E143 /* Env.swift */; };
+		CC8F604129791A360088D5CF /* DittoObjC in Frameworks */ = {isa = PBXBuildFile; productRef = CC8F604029791A360088D5CF /* DittoObjC */; };
+		CC8F604329791A360088D5CF /* DittoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC8F604229791A360088D5CF /* DittoSwift */; };
+		CC8F604629791A590088D5CF /* DittoPresenceViewer in Frameworks */ = {isa = PBXBuildFile; productRef = CC8F604529791A590088D5CF /* DittoPresenceViewer */; };
+		CCD3A728297EA27F00A7EFED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3A727297EA27F00A7EFED /* Extensions.swift */; };
+		CCF7CB1824FED62300B5ED70 /* BackgroundSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7CB1724FED62300B5ED70 /* BackgroundSync.swift */; };
+		E32461EA20E47D400006C628 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32461E920E47D400006C628 /* MainViewController.swift */; };
+		E32461EC20E47DFC0006C628 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32461EB20E47DFC0006C628 /* Constants.swift */; };
+		E32461F020E488560006C628 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32461EF20E488560006C628 /* ItemTableViewCell.swift */; };
+		E3ED324020E439FD005FC8B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED323F20E439FD005FC8B1 /* AppDelegate.swift */; };
+		E3ED324720E439FE005FC8B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3ED324620E439FE005FC8B1 /* Assets.xcassets */; };
+		E3ED324A20E439FE005FC8B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3ED324820E439FE005FC8B1 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC7551AF25D5251100007A3F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4464DE708AA4CA73C9A32657 /* Pods-Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inventory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inventory/Pods-Inventory.debug.xcconfig"; sourceTree = "<group>"; };
+		5CDB6A9E7AB16C312CF5308B /* libPods-Inventory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Inventory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CFF5C7A4A80110D8C778D8 /* Pods-Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inventory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inventory/Pods-Inventory.debug.xcconfig"; sourceTree = "<group>"; };
+		86F98BF813F4AEA32DB244E3 /* Pods-Inventory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inventory.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inventory/Pods-Inventory.release.xcconfig"; sourceTree = "<group>"; };
+		980C58C7D7DD918171C52F87 /* Pods-Inventory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inventory.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inventory/Pods-Inventory.release.xcconfig"; sourceTree = "<group>"; };
+		CC371EF329794A9700430C6F /* DittoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoManager.swift; sourceTree = "<group>"; };
+		CC371EF52979573200430C6F /* ItemDittoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDittoModel.swift; sourceTree = "<group>"; };
+		CC481D5E24B073230007C4D2 /* DittoSDKInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DittoSDKInfoViewController.swift; sourceTree = "<group>"; };
+		CC481D5F24B073230007C4D2 /* DittoInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DittoInfoViewController.swift; sourceTree = "<group>"; };
+		CC481D6024B073230007C4D2 /* DittoInfoView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DittoInfoView.storyboard; sourceTree = "<group>"; };
+		CC626BF6298A655B0065E143 /* Env.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		CCD3A727297EA27F00A7EFED /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CCF7CB1724FED62300B5ED70 /* BackgroundSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSync.swift; sourceTree = "<group>"; };
+		E32461E920E47D400006C628 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E32461EB20E47DFC0006C628 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E32461EF20E488560006C628 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		E3ED323C20E439FD005FC8B1 /* Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3ED323F20E439FD005FC8B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3ED324620E439FE005FC8B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3ED324920E439FE005FC8B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3ED324B20E439FF005FC8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3ED323920E439FD005FC8B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8F604129791A360088D5CF /* DittoObjC in Frameworks */,
+				CC8F604629791A590088D5CF /* DittoPresenceViewer in Frameworks */,
+				CC8F604329791A360088D5CF /* DittoSwift in Frameworks */,
+				64C9A00DEB6D1DD41F64EE42 /* libPods-Inventory.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		267A0053764C5EBE99BF216D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4464DE708AA4CA73C9A32657 /* Pods-Inventory.debug.xcconfig */,
+				86F98BF813F4AEA32DB244E3 /* Pods-Inventory.release.xcconfig */,
+				76CFF5C7A4A80110D8C778D8 /* Pods-Inventory.debug.xcconfig */,
+				980C58C7D7DD918171C52F87 /* Pods-Inventory.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2F5E67C2AA2CED5E0F8C835A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB6A9E7AB16C312CF5308B /* libPods-Inventory.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC481D5D24B073230007C4D2 /* DittoInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				CC481D5E24B073230007C4D2 /* DittoSDKInfoViewController.swift */,
+				CC481D5F24B073230007C4D2 /* DittoInfoViewController.swift */,
+				CC481D6024B073230007C4D2 /* DittoInfoView.storyboard */,
+				CCF7CB1724FED62300B5ED70 /* BackgroundSync.swift */,
+			);
+			path = DittoInfoView;
+			sourceTree = "<group>";
+		};
+		E3ED323320E439FD005FC8B1 = {
+			isa = PBXGroup;
+			children = (
+				E3ED323E20E439FD005FC8B1 /* Inventory */,
+				E3ED323D20E439FD005FC8B1 /* Products */,
+				2F5E67C2AA2CED5E0F8C835A /* Frameworks */,
+				267A0053764C5EBE99BF216D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E3ED323D20E439FD005FC8B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3ED323C20E439FD005FC8B1 /* Inventory.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3ED323E20E439FD005FC8B1 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				CC481D5D24B073230007C4D2 /* DittoInfoView */,
+				E3ED323F20E439FD005FC8B1 /* AppDelegate.swift */,
+				E3ED324620E439FE005FC8B1 /* Assets.xcassets */,
+				E3ED324820E439FE005FC8B1 /* LaunchScreen.storyboard */,
+				E3ED324B20E439FF005FC8B1 /* Info.plist */,
+				E32461E920E47D400006C628 /* MainViewController.swift */,
+				E32461EB20E47DFC0006C628 /* Constants.swift */,
+				E32461EF20E488560006C628 /* ItemTableViewCell.swift */,
+				CC371EF329794A9700430C6F /* DittoManager.swift */,
+				CC371EF52979573200430C6F /* ItemDittoModel.swift */,
+				CCD3A727297EA27F00A7EFED /* Extensions.swift */,
+				CC626BF6298A655B0065E143 /* Env.swift */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3ED323B20E439FD005FC8B1 /* Inventory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3ED324E20E439FF005FC8B1 /* Build configuration list for PBXNativeTarget "Inventory" */;
+			buildPhases = (
+				B035A5BC7A180CCCDD211B9E /* [CP] Check Pods Manifest.lock */,
+				E3ED323820E439FD005FC8B1 /* Sources */,
+				E3ED323920E439FD005FC8B1 /* Frameworks */,
+				E3ED323A20E439FD005FC8B1 /* Resources */,
+				CC7551AF25D5251100007A3F /* Embed Frameworks */,
+				CCE28738298A561F00BAFC48 /* Generate Env.swift */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Inventory;
+			packageProductDependencies = (
+				CC8F604029791A360088D5CF /* DittoObjC */,
+				CC8F604229791A360088D5CF /* DittoSwift */,
+				CC8F604529791A590088D5CF /* DittoPresenceViewer */,
+			);
+			productName = Inventory;
+			productReference = E3ED323C20E439FD005FC8B1 /* Inventory.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3ED323420E439FD005FC8B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Ditto;
+				TargetAttributes = {
+					E3ED323B20E439FD005FC8B1 = {
+						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E3ED323720E439FD005FC8B1 /* Build configuration list for PBXProject "Inventory" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3ED323320E439FD005FC8B1;
+			packageReferences = (
+				CC8F603F29791A360088D5CF /* XCRemoteSwiftPackageReference "DittoSwiftPackage" */,
+				CC8F604429791A590088D5CF /* XCRemoteSwiftPackageReference "DittoSwiftTools" */,
+			);
+			productRefGroup = E3ED323D20E439FD005FC8B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3ED323B20E439FD005FC8B1 /* Inventory */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3ED323A20E439FD005FC8B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC481D6E24B073230007C4D2 /* DittoInfoView.storyboard in Resources */,
+				E3ED324A20E439FE005FC8B1 /* LaunchScreen.storyboard in Resources */,
+				E3ED324720E439FE005FC8B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B035A5BC7A180CCCDD211B9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Inventory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCE28738298A561F00BAFC48 /* Generate Env.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Env.swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/buildEnv.sh\" \"${SRCROOT}/../.env\" \"${SRCROOT}/${PROJECT}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3ED323820E439FD005FC8B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC481D6C24B073230007C4D2 /* DittoSDKInfoViewController.swift in Sources */,
+				E32461EA20E47D400006C628 /* MainViewController.swift in Sources */,
+				E3ED324020E439FD005FC8B1 /* AppDelegate.swift in Sources */,
+				CCF7CB1824FED62300B5ED70 /* BackgroundSync.swift in Sources */,
+				CC371EF62979573200430C6F /* ItemDittoModel.swift in Sources */,
+				CCD3A728297EA27F00A7EFED /* Extensions.swift in Sources */,
+				E32461F020E488560006C628 /* ItemTableViewCell.swift in Sources */,
+				E32461EC20E47DFC0006C628 /* Constants.swift in Sources */,
+				CC481D6D24B073230007C4D2 /* DittoInfoViewController.swift in Sources */,
+				CC371EF429794A9700430C6F /* DittoManager.swift in Sources */,
+				CC626BF7298A655B0065E143 /* Env.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E3ED324820E439FE005FC8B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3ED324920E439FE005FC8B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3ED324C20E439FF005FC8B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3ED324D20E439FF005FC8B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3ED324F20E439FF005FC8B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76CFF5C7A4A80110D8C778D8 /* Pods-Inventory.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3T2VMFZPPQ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Inventory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dittolive.InventoryP2PTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3ED325020E439FF005FC8B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 980C58C7D7DD918171C52F87 /* Pods-Inventory.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T2VMFZPPQ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Inventory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dittolive.InventoryP2PTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore *";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3ED323720E439FD005FC8B1 /* Build configuration list for PBXProject "Inventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3ED324C20E439FF005FC8B1 /* Debug */,
+				E3ED324D20E439FF005FC8B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3ED324E20E439FF005FC8B1 /* Build configuration list for PBXNativeTarget "Inventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3ED324F20E439FF005FC8B1 /* Debug */,
+				E3ED325020E439FF005FC8B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC8F603F29791A360088D5CF /* XCRemoteSwiftPackageReference "DittoSwiftPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getditto/DittoSwiftPackage";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		CC8F604429791A590088D5CF /* XCRemoteSwiftPackageReference "DittoSwiftTools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getditto/DittoSwiftTools";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC8F604029791A360088D5CF /* DittoObjC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC8F603F29791A360088D5CF /* XCRemoteSwiftPackageReference "DittoSwiftPackage" */;
+			productName = DittoObjC;
+		};
+		CC8F604229791A360088D5CF /* DittoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC8F603F29791A360088D5CF /* XCRemoteSwiftPackageReference "DittoSwiftPackage" */;
+			productName = DittoSwift;
+		};
+		CC8F604529791A590088D5CF /* DittoPresenceViewer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC8F604429791A590088D5CF /* XCRemoteSwiftPackageReference "DittoSwiftTools" */;
+			productName = DittoPresenceViewer;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E3ED323420E439FD005FC8B1 /* Project object */;
+}
