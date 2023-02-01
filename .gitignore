@@ -81,3 +81,5 @@ xcuserdata/
 .gradle/
 .vscode/
 local.properties
+
+.env
