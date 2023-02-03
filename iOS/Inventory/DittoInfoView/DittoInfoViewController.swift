@@ -9,6 +9,8 @@
 import UIKit
 import DittoSwift
 import DittoPresenceViewer
+import DittoExportLogs
+import SwiftUI
 
 public struct DittoInfoViewFactory {
     private init() {}
@@ -24,6 +26,8 @@ fileprivate enum CellInfo: String, CaseIterable {
     case presenceView = "Presence View"
     case sdkInfo = "Ditto SDK Info"
     case prolonged = "Prolonged Background Sync"
+    case exportLogs = "Export Logs"
+
 
     var index: Int {
         return CellInfo.allCases.firstIndex(of: self)!
@@ -35,6 +39,8 @@ fileprivate enum CellInfo: String, CaseIterable {
             return .disclosureIndicator
         case .prolonged:
             return BackgroundSync.shared.isOn ? .checkmark : .none
+        case .exportLogs:
+            return.none
         }
     }
 }
@@ -99,6 +105,8 @@ extension DittoInfoViewController: UITableViewDelegate, UITableViewDataSource {
         case .prolonged:
             BackgroundSync.shared.isOn = !BackgroundSync.shared.isOn
             tableView.reloadRows(at: [indexPath], with: .automatic)
+        case .exportLogs:
+            shareDittoLogs()
         }
     }
 
@@ -118,5 +126,23 @@ extension DittoInfoViewController: UITableViewDelegate, UITableViewDataSource {
 
     private func toInfo(_ indexPath: IndexPath) -> CellInfo {
         return CellInfo.allCases[indexPath.row]
+    }
+    
+    private func shareDittoLogs() {
+        let alert = UIAlertController(title: "Export Logs", message: "Compressing the logs may take a few seconds.", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Export", style: .default) { [weak self] _ in
+            self?.exportLogs()
+        })
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+
+        present(alert, animated: true)
+    }
+    
+    private func exportLogs() {
+        
+        let vc = UIHostingController(rootView: ExportLogs())
+
+        present(vc, animated: true)
     }
 }

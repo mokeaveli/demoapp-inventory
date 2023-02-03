@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E6382EC298D92810099A79A /* DittoExportLogs in Frameworks */ = {isa = PBXBuildFile; productRef = 0E6382EB298D92810099A79A /* DittoExportLogs */; };
 		64C9A00DEB6D1DD41F64EE42 /* libPods-Inventory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDB6A9E7AB16C312CF5308B /* libPods-Inventory.a */; };
 		CC371EF429794A9700430C6F /* DittoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC371EF329794A9700430C6F /* DittoManager.swift */; };
 		CC371EF62979573200430C6F /* ItemDittoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC371EF52979573200430C6F /* ItemDittoModel.swift */; };
@@ -70,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC8F604129791A360088D5CF /* DittoObjC in Frameworks */,
+				0E6382EC298D92810099A79A /* DittoExportLogs in Frameworks */,
 				CC8F604629791A590088D5CF /* DittoPresenceViewer in Frameworks */,
 				CC8F604329791A360088D5CF /* DittoSwift in Frameworks */,
 				64C9A00DEB6D1DD41F64EE42 /* libPods-Inventory.a in Frameworks */,
@@ -169,6 +171,7 @@
 				CC8F604029791A360088D5CF /* DittoObjC */,
 				CC8F604229791A360088D5CF /* DittoSwift */,
 				CC8F604529791A590088D5CF /* DittoPresenceViewer */,
+				0E6382EB298D92810099A79A /* DittoExportLogs */,
 			);
 			productName = Inventory;
 			productReference = E3ED323C20E439FD005FC8B1 /* Inventory.app */;
@@ -519,6 +522,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0E6382EB298D92810099A79A /* DittoExportLogs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC8F604429791A590088D5CF /* XCRemoteSwiftPackageReference "DittoSwiftTools" */;
+			productName = DittoExportLogs;
+		};
 		CC8F604029791A360088D5CF /* DittoObjC */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CC8F603F29791A360088D5CF /* XCRemoteSwiftPackageReference "DittoSwiftPackage" */;
