@@ -12,6 +12,13 @@ android {
         versionCode 46
         versionName "5.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        if (project.hasProperty('APP_ID')) {
+            buildConfigField 'String', 'APP_ID', project.APP_ID
+        }
+        if (project.hasProperty('OFFLINE_LICENSE_TOKEN')) {
+            buildConfigField 'String', 'OFFLINE_LICENSE_TOKEN', project.OFFLINE_LICENSE_TOKEN
+        }
     }
 
     flavorDimensions("arch")

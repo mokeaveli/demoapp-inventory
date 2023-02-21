@@ -30,8 +30,8 @@ object DittoManager {
     private var subscription: DittoSubscription? = null
     private var liveQuery: DittoLiveQuery? = null
 
-    private const val APP_ID = ""
-    private const val OFFLINE_LICENSE = ""
+    private const val APP_ID = BuildConfig.APP_ID
+    private const val OFFLINE_LICENSE = BuildConfig.OFFLINE_LICENSE_TOKEN
 
 
     /* Internal functions and properties */
