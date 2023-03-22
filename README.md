@@ -6,6 +6,11 @@ This inventory demo showcases the smoothness of the Ditto sync and how counters 
 
 Powered by [Ditto](https://www.ditto.live/).
 
+- [Demo Video](https://www.youtube.com/watch?v=1P2bKEJjdec)
+
+- [iOS Download](https://apps.apple.com/us/app/ditto-inventory/id1449905935)
+- [Android Download](https://play.google.com/store/apps/details?id=live.ditto.inventory)
+
 
 ## Developing
 
