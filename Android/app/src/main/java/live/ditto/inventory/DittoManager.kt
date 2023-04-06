@@ -30,6 +30,7 @@ object DittoManager {
     private var subscription: DittoSubscription? = null
     private var liveQuery: DittoLiveQuery? = null
 
+    // Those values should be pasted in 'gradle.properties'. See the notion page for more details.
     private const val APP_ID = BuildConfig.APP_ID
     private const val ONLINE_AUTH_TOKEN = BuildConfig.ONLINE_AUTH_TOKEN
 
