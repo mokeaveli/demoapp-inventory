@@ -31,18 +31,18 @@ object DittoManager {
     private var liveQuery: DittoLiveQuery? = null
 
     private const val APP_ID = BuildConfig.APP_ID
-    private const val OFFLINE_LICENSE = BuildConfig.OFFLINE_LICENSE_TOKEN
+    private const val ONLINE_AUTH_TOKEN = BuildConfig.ONLINE_AUTH_TOKEN
 
 
     /* Internal functions and properties */
     internal fun startDitto(context: Context) {
-
         DittoLogger.minimumLogLevel = DittoLogLevel.VERBOSE
+
         val dependencies = DefaultAndroidDittoDependencies(context)
+        ditto = Ditto(dependencies, DittoIdentity.OnlinePlayground(dependencies, APP_ID, ONLINE_AUTH_TOKEN, false))
 
         try {
-            ditto = Ditto(dependencies, DittoIdentity.OfflinePlayground(dependencies, APP_ID))
-            ditto?.setOfflineOnlyLicenseToken(OFFLINE_LICENSE)
+            ditto?.disableSyncWithV3()
             ditto?.startSync()
         } catch (e: Exception) {
             Log.e(e.message, e.localizedMessage)

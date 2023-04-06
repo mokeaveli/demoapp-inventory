@@ -54,15 +54,11 @@ final class DittoManager {
     private func startDitto() -> Ditto {
         DittoLogger.minimumLogLevel = .verbose
 
-        let ditto = Ditto(identity: .offlinePlayground(appID: Env.APP_ID))
+        let ditto = Ditto(identity: .onlinePlayground(appID: Env.APP_ID, token: Env.ONLINE_AUTH_TOKEN, enableDittoCloudSync: false))
 
         do {
             try ditto.disableSyncWithV3()
-
-            try ditto.setOfflineOnlyLicenseToken(Env.OFFLINE_LICENSE_TOKEN)
-
             try ditto.startSync()
-
         } catch {
             let dittoErr = (error as? DittoSwiftError)?.errorDescription
             assertionFailure(dittoErr ?? error.localizedDescription)
