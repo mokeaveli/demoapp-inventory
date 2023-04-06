@@ -57,6 +57,8 @@ final class DittoManager {
         let ditto = Ditto(identity: .offlinePlayground(appID: Env.APP_ID))
 
         do {
+            try ditto.disableSyncWithV3()
+
             try ditto.setOfflineOnlyLicenseToken(Env.OFFLINE_LICENSE_TOKEN)
 
             try ditto.startSync()
@@ -87,7 +89,7 @@ extension DittoManager {
             query.subscribe()
         )
         liveQueries.append(
-            query.observeLocal(deliverOn: .global(qos: .utility)) { [weak self] docs, event in
+            query.observeLocal { [weak self] docs, event in
                 guard let self = self else { return }
 
                 let allItems = docs.map { ItemDittoModel($0) }
