@@ -54,13 +54,11 @@ final class DittoManager {
     private func startDitto() -> Ditto {
         DittoLogger.minimumLogLevel = .verbose
 
-        let ditto = Ditto(identity: .offlinePlayground(appID: Env.APP_ID))
+        let ditto = Ditto(identity: .onlinePlayground(appID: Env.APP_ID, token: Env.ONLINE_AUTH_TOKEN, enableDittoCloudSync: false))
 
         do {
-            try ditto.setOfflineOnlyLicenseToken(Env.OFFLINE_LICENSE_TOKEN)
-
+            try ditto.disableSyncWithV3()
             try ditto.startSync()
-
         } catch {
             let dittoErr = (error as? DittoSwiftError)?.errorDescription
             assertionFailure(dittoErr ?? error.localizedDescription)
@@ -87,7 +85,7 @@ extension DittoManager {
             query.subscribe()
         )
         liveQueries.append(
-            query.observeLocal(deliverOn: .global(qos: .utility)) { [weak self] docs, event in
+            query.observeLocal { [weak self] docs, event in
                 guard let self = self else { return }
 
                 let allItems = docs.map { ItemDittoModel($0) }
