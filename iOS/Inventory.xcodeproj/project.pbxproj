@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E6382EC298D92810099A79A /* DittoExportLogs in Frameworks */ = {isa = PBXBuildFile; productRef = 0E6382EB298D92810099A79A /* DittoExportLogs */; };
-		64C9A00DEB6D1DD41F64EE42 /* libPods-Inventory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDB6A9E7AB16C312CF5308B /* libPods-Inventory.a */; };
 		CC371EF429794A9700430C6F /* DittoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC371EF329794A9700430C6F /* DittoManager.swift */; };
 		CC371EF62979573200430C6F /* ItemDittoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC371EF52979573200430C6F /* ItemDittoModel.swift */; };
 		CC481D6C24B073230007C4D2 /* DittoSDKInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC481D5E24B073230007C4D2 /* DittoSDKInfoViewController.swift */; };
@@ -19,6 +18,7 @@
 		CC8F604329791A360088D5CF /* DittoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC8F604229791A360088D5CF /* DittoSwift */; };
 		CC8F604629791A590088D5CF /* DittoPresenceViewer in Frameworks */ = {isa = PBXBuildFile; productRef = CC8F604529791A590088D5CF /* DittoPresenceViewer */; };
 		CCD3A728297EA27F00A7EFED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3A727297EA27F00A7EFED /* Extensions.swift */; };
+		CCE8646529E59037007D822C /* Cartography in Frameworks */ = {isa = PBXBuildFile; productRef = CCE8646429E59037007D822C /* Cartography */; };
 		CCF7CB1824FED62300B5ED70 /* BackgroundSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7CB1724FED62300B5ED70 /* BackgroundSync.swift */; };
 		E32461EA20E47D400006C628 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32461E920E47D400006C628 /* MainViewController.swift */; };
 		E32461EC20E47DFC0006C628 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32461EB20E47DFC0006C628 /* Constants.swift */; };
@@ -42,11 +42,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4464DE708AA4CA73C9A32657 /* Pods-Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inventory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inventory/Pods-Inventory.debug.xcconfig"; sourceTree = "<group>"; };
-		5CDB6A9E7AB16C312CF5308B /* libPods-Inventory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Inventory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76CFF5C7A4A80110D8C778D8 /* Pods-Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inventory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inventory/Pods-Inventory.debug.xcconfig"; sourceTree = "<group>"; };
-		86F98BF813F4AEA32DB244E3 /* Pods-Inventory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inventory.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inventory/Pods-Inventory.release.xcconfig"; sourceTree = "<group>"; };
-		980C58C7D7DD918171C52F87 /* Pods-Inventory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inventory.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inventory/Pods-Inventory.release.xcconfig"; sourceTree = "<group>"; };
 		CC371EF329794A9700430C6F /* DittoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoManager.swift; sourceTree = "<group>"; };
 		CC371EF52979573200430C6F /* ItemDittoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDittoModel.swift; sourceTree = "<group>"; };
 		CC481D5E24B073230007C4D2 /* DittoSDKInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DittoSDKInfoViewController.swift; sourceTree = "<group>"; };
@@ -70,36 +65,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE8646529E59037007D822C /* Cartography in Frameworks */,
 				CC8F604129791A360088D5CF /* DittoObjC in Frameworks */,
 				0E6382EC298D92810099A79A /* DittoExportLogs in Frameworks */,
 				CC8F604629791A590088D5CF /* DittoPresenceViewer in Frameworks */,
 				CC8F604329791A360088D5CF /* DittoSwift in Frameworks */,
-				64C9A00DEB6D1DD41F64EE42 /* libPods-Inventory.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		267A0053764C5EBE99BF216D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4464DE708AA4CA73C9A32657 /* Pods-Inventory.debug.xcconfig */,
-				86F98BF813F4AEA32DB244E3 /* Pods-Inventory.release.xcconfig */,
-				76CFF5C7A4A80110D8C778D8 /* Pods-Inventory.debug.xcconfig */,
-				980C58C7D7DD918171C52F87 /* Pods-Inventory.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		2F5E67C2AA2CED5E0F8C835A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5CDB6A9E7AB16C312CF5308B /* libPods-Inventory.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CC481D5D24B073230007C4D2 /* DittoInfoView */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +92,6 @@
 			children = (
 				E3ED323E20E439FD005FC8B1 /* Inventory */,
 				E3ED323D20E439FD005FC8B1 /* Products */,
-				2F5E67C2AA2CED5E0F8C835A /* Frameworks */,
-				267A0053764C5EBE99BF216D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,7 +129,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3ED324E20E439FF005FC8B1 /* Build configuration list for PBXNativeTarget "Inventory" */;
 			buildPhases = (
-				B035A5BC7A180CCCDD211B9E /* [CP] Check Pods Manifest.lock */,
 				E3ED323820E439FD005FC8B1 /* Sources */,
 				E3ED323920E439FD005FC8B1 /* Frameworks */,
 				E3ED323A20E439FD005FC8B1 /* Resources */,
@@ -172,6 +145,7 @@
 				CC8F604229791A360088D5CF /* DittoSwift */,
 				CC8F604529791A590088D5CF /* DittoPresenceViewer */,
 				0E6382EB298D92810099A79A /* DittoExportLogs */,
+				CCE8646429E59037007D822C /* Cartography */,
 			);
 			productName = Inventory;
 			productReference = E3ED323C20E439FD005FC8B1 /* Inventory.app */;
@@ -209,6 +183,7 @@
 			packageReferences = (
 				CC8F603F29791A360088D5CF /* XCRemoteSwiftPackageReference "DittoSwiftPackage" */,
 				CC8F604429791A590088D5CF /* XCRemoteSwiftPackageReference "DittoSwiftTools" */,
+				CCE8646329E59037007D822C /* XCRemoteSwiftPackageReference "Cartography" */,
 			);
 			productRefGroup = E3ED323D20E439FD005FC8B1 /* Products */;
 			projectDirPath = "";
@@ -233,24 +208,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B035A5BC7A180CCCDD211B9E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Inventory-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CCE28738298A561F00BAFC48 /* Generate Env.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -422,7 +379,6 @@
 		};
 		E3ED324F20E439FF005FC8B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76CFF5C7A4A80110D8C778D8 /* Pods-Inventory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -452,7 +408,6 @@
 		};
 		E3ED325020E439FF005FC8B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 980C58C7D7DD918171C52F87 /* Pods-Inventory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -519,6 +474,14 @@
 				kind = branch;
 			};
 		};
+		CCE8646329E59037007D822C /* XCRemoteSwiftPackageReference "Cartography" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robb/Cartography";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -541,6 +504,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CC8F604429791A590088D5CF /* XCRemoteSwiftPackageReference "DittoSwiftTools" */;
 			productName = DittoPresenceViewer;
+		};
+		CCE8646429E59037007D822C /* Cartography */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCE8646329E59037007D822C /* XCRemoteSwiftPackageReference "Cartography" */;
+			productName = Cartography;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
