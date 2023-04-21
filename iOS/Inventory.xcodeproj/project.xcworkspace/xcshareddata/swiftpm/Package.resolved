@@ -1,12 +1,21 @@
 {
   "pins" : [
     {
+      "identity" : "cartography",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robb/Cartography",
+      "state" : {
+        "revision" : "b75197ea134f42b5feafb04b526b37eb1a41034b",
+        "version" : "4.0.0"
+      }
+    },
+    {
       "identity" : "dittoswiftpackage",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/getditto/DittoSwiftPackage",
       "state" : {
-        "branch" : "main",
-        "revision" : "cd88e8bd18ac64169a680ee5227a0dbaaea7e914"
+        "revision" : "ee0d49b588065ac6a4149c1df95b9d6bc5cc975a",
+        "version" : "4.0.1"
       }
     },
     {
@@ -14,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/getditto/DittoSwiftTools",
       "state" : {
-        "branch" : "main",
-        "revision" : "62fd33eed69e07f3c21fd6c1e11fbda12346a346"
+        "branch" : "v4",
+        "revision" : "146d0f7d63aa80f6fc6756b93c6a8d0f6cbca2e9"
       }
     },
     {
