@@ -82,9 +82,6 @@ xcuserdata/
 .vscode/
 local.properties
 
-# gradle.properties contains environment variables
-gradle.properties
-
 # Environment Variable
 .env
 Env.swift
