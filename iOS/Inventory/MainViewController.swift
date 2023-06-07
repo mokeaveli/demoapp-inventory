@@ -84,8 +84,8 @@ final class MainViewController: UIViewController {
         tableView.reloadRows(at: indexPaths, with: .automatic)
 
         indexPaths.forEach { indexPath in
-            let cell = tableView.cellForRow(at: indexPath) as! ItemTableViewCell
-            cell.animateBackground()
+            let cell = tableView.cellForRow(at: indexPath) as? ItemTableViewCell
+            cell?.animateBackground()
         }
     }
 
