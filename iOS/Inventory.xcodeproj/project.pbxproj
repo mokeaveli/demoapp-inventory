@@ -130,7 +130,6 @@
 			buildConfigurationList = E3ED324E20E439FF005FC8B1 /* Build configuration list for PBXNativeTarget "Inventory" */;
 			buildPhases = (
 				CCE28738298A561F00BAFC48 /* Generate Env.swift */,
-				B035A5BC7A180CCCDD211B9E /* [CP] Check Pods Manifest.lock */,
 				E3ED323820E439FD005FC8B1 /* Sources */,
 				E3ED323920E439FD005FC8B1 /* Frameworks */,
 				E3ED323A20E439FD005FC8B1 /* Resources */,
@@ -398,7 +397,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dittolive.InventoryP2PTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -426,7 +425,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dittolive.InventoryP2PTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore *";
