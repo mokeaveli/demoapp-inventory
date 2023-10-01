@@ -79,10 +79,10 @@ final class MainViewController: UIViewController {
     }
 
     private func updateViewFor(indices: [Int]) {
-
         let indexPaths = indices.map { IndexPath(row: $0, section: 0) }
-        tableView.reloadRows(at: indexPaths, with: .automatic)
-
+        UIView.performWithoutAnimation {
+            tableView.reloadRows(at: indexPaths, with: .automatic)
+        }
         indexPaths.forEach { indexPath in
             let cell = tableView.cellForRow(at: indexPath) as? ItemTableViewCell
             cell?.animateBackground()
