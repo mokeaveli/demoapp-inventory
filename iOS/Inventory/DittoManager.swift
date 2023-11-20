@@ -42,7 +42,7 @@ final class DittoManager {
     private lazy var ditto: Ditto! = { startDitto() }()
     private lazy var collections = { Collections(ditto.store) }()
 
-    private var subscriptions = [DittoSubscription]()
+    private var subscriptions = [DittoSyncSubscription]()
     private var liveQueries = [DittoLiveQuery]()
 
     // MARK: - Combine Subjects (to be observed from outside of this class)
@@ -79,13 +79,14 @@ extension DittoManager {
 
     func subscribeAllInventoryItems() {
 
-        let query = collections.inventories.findAll()
-
-        subscriptions.append(
-            query.subscribe()
-        )
+        do {
+            subscriptions.append(try ditto.sync.registerSubscription(query: "SELECT * FROM inventories"))
+        } catch {
+            print("Query Error: \(error)")
+        }
+        
         liveQueries.append(
-            query.observeLocal { [weak self] docs, event in
+            collections.inventories.findAll().observeLocal { [weak self] docs, event in
                 guard let self = self else { return }
 
                 let allItems = docs.map { ItemDittoModel($0) }
