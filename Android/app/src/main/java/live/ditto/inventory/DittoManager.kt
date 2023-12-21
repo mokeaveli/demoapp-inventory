@@ -27,7 +27,7 @@ object DittoManager {
     private const val COLLECTION_NAME = "inventories"
     private var collection: DittoCollection? = null
 
-    private var subscription: DittoSubscription? = null
+    private var subscription: DittoSyncSubscription? = null
     private var liveQuery: DittoLiveQuery? = null
 
     // Those values should be pasted in 'gradle.properties'. See the notion page for more details.
@@ -93,7 +93,7 @@ object DittoManager {
     private fun observeItems() {
         val query = collection?.findAll()
 
-        subscription = query?.subscribe()
+        subscription =  ditto?.sync?.registerSubscription(query = "SELECT * FROM inventories")
 
         liveQuery = query?.observeLocal { docs, event ->
 
