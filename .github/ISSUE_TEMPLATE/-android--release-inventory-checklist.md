@@ -17,11 +17,11 @@ assignees: ''
 1. - [ ] Assign yourself on this issue.
 1. - [ ] Follow [the guide](https://www.notion.so/getditto/How-to-Set-Up-Your-Mac-for-Publishing-Demo-Apps-aa53e4a74f1c44d3a1f8c26e708bd904) to install the credential key.
 1. - [ ] Make sure your `/Android/secure/` vars are the same as the ones listed in [Environment Variables](https://www.notion.so/getditto/Environment-Variables-78261e05a2b44a299ee388f06e9ff86a?pvs=4#01bb66828f7549639db3dd9f8737cf38); otherwise the app won't sync with the existing versions.
-      - Run `cat Android/secure/release_creds.properties Android/secure/debug_creds.properties` to check vars
+      - Run `cat Android/secure/release_creds.properties Android/secure/debug_creds.properties` to check vars.
 1. - [ ] Make sure your branch is up to date (`git pull`).
 1. - [ ] Test the Android Inventory by syncing on multiple devices, opening PresenceViewer, etc.
 1. - [ ] Test the cross-platform sync with [the iOS Inventory](https://github.com/getditto/demoapp-inventory/tree/main/iOS).
-1. - [ ] Go to [Google Play Console](https://play.google.com/console/u/0/developers/6545405960643680014/app/4972539189514589633/tracks/production?tab=releases) and check the current released version number, then open this app with Android Studio and increment the version code in [app/build.gradle](https://github.com/getditto/demoapp-inventory/blob/main/Android/app/build.gradle#L12). Normally following [the semantic versioning](https://semver.org/).
+1. - [ ] Go to [Google Play Console](https://play.google.com/console/u/0/developers/6545405960643680014/app/4972539189514589633/tracks/production?tab=releases) and check the current released version number, then open this app with Android Studio and increment the version code in [app/build.gradle](https://github.com/getditto/demoapp-inventory/blob/main/Android/app/build.gradle#L12).
 1. - [ ] Generate a signed APK:
       - In Android Studio, click <kbd>Build</kbd> → <kbd>Generate Signed Bundle / APK...</kbd>.
       - Select <kbd>APK</kbd>, then click <kbd>Next</kbd>.
