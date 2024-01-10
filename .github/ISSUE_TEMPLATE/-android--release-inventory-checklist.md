@@ -1,7 +1,7 @@
 ---
 name: "[Android] Release Inventory Checklist"
 about: A checklist for releasing Android Inventory
-title: ''
+title: "[Release] Android Chat"
 labels: ''
 assignees: ''
 
