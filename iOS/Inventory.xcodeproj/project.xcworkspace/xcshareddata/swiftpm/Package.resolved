@@ -1,4 +1,5 @@
 {
+  "originHash" : "e46e5400f3661256bd0197e1612c81282831b17087168009e217d707f188d805",
   "pins" : [
     {
       "identity" : "cartography",
@@ -14,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/getditto/DittoSwiftPackage",
       "state" : {
-        "revision" : "36819be61b0622c7779bcba84a263b7234297c56",
-        "version" : "4.4.5"
+        "revision" : "808b636b11ddd129b956cc8d9c71534880a8a1f1",
+        "version" : "4.7.0"
       }
     },
     {
@@ -37,5 +38,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
