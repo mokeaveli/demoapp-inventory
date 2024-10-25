@@ -218,7 +218,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/buildEnv.sh",
-				"$(SRCROOT)/.env",
+				"$(SRCROOT)/../.env",
 			);
 			name = "Generate Env.swift";
 			outputFileListPaths = (
