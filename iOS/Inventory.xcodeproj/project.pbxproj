@@ -210,12 +210,15 @@
 /* Begin PBXShellScriptBuildPhase section */
 		CCE28738298A561F00BAFC48 /* Generate Env.swift */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/buildEnv.sh",
+				"$(SRCROOT)/../.env",
 			);
 			name = "Generate Env.swift";
 			outputFileListPaths = (
@@ -464,8 +467,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/getditto/DittoSwiftTools";
 			requirement = {
-				branch = v4;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
 			};
 		};
 		0EC95D302B0BEA1D006A35A0 /* XCRemoteSwiftPackageReference "DittoSwiftPackage" */ = {
@@ -473,7 +476,7 @@
 			repositoryURL = "https://github.com/getditto/DittoSwiftPackage";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.7.0;
+				minimumVersion = 4.8.2;
 			};
 		};
 		CCE8646329E59037007D822C /* XCRemoteSwiftPackageReference "Cartography" */ = {
