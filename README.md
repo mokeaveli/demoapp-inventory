@@ -28,6 +28,7 @@ For support, please contact Ditto Support (<support@ditto.live>).
 1. Open `/Android/gradle.properties` and add environment variables
 1. Build the app normally
 
+Compatible with Android Automotive OS (AAOS)
 
 ## License
 
