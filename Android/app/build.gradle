@@ -37,9 +37,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             def credsFile = rootProject.file("secure\\release_creds.properties")
             def prop = new Properties()
-            prop.load(new FileInputStream(credsFile))
-            buildConfigField('String', 'APP_ID', prop['APP_ID']) // always use single quotes here
-            buildConfigField('String', 'ONLINE_AUTH_TOKEN', prop['ONLINE_AUTH_TOKEN'])
+            try {
+                prop.load(new FileInputStream(credsFile))
+                buildConfigField('String', 'APP_ID', prop['APP_ID']) // always use single quotes here
+                buildConfigField('String', 'ONLINE_AUTH_TOKEN', prop['ONLINE_AUTH_TOKEN'])
+            } catch (FileNotFoundException e) {
+                logger.warn(e.getMessage())
+            }
+
         }
     }
 
