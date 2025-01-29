@@ -5,6 +5,8 @@ import android.animation.ValueAnimator
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
+import android.icu.text.NumberFormat
+import android.icu.util.Currency
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
@@ -22,6 +24,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.launch
 import live.ditto.transports.DittoSyncPermissions
+import java.util.Locale
 
 class MainActivity : AppCompatActivity(), DittoManager.ItemUpdateListener {
     private lateinit var recyclerView: RecyclerView
@@ -88,9 +91,11 @@ class MainActivity : AppCompatActivity(), DittoManager.ItemUpdateListener {
             R.id.show_information_view -> {
                 showInformationView(); true
             }
+
             R.id.show_ditto_tools -> {
                 showDittoTools(); true
             }
+
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -145,9 +150,12 @@ class ItemsAdapter : RecyclerView.Adapter<ItemsAdapter.ItemViewHolder>() {
         with(holder.itemView) {
             findViewById<TextView>(R.id.itemTitleView).text = item.title
             findViewById<TextView>(R.id.itemDescriptionView).text = item.detail
-            findViewById<TextView>(R.id.quantityView).text = item.count.toString()
+            findViewById<TextView>(R.id.quantityView).text = String.format(
+                locale = Locale.getDefault(),
+                format = "%s", item.count.toString()
+            )
             findViewById<ImageView>(R.id.imageView).setImageResource(item.image)
-            findViewById<TextView>(R.id.priceView).text = "$" + item.price.toString()
+            findViewById<TextView>(R.id.priceView).text = formatMoney(price = item.price)
             findViewById<Button>(R.id.plusButton).setOnClickListener {
                 onPlusClick?.invoke(items[holder.bindingAdapterPosition])
             }
@@ -170,6 +178,14 @@ class ItemsAdapter : RecyclerView.Adapter<ItemsAdapter.ItemViewHolder>() {
         this.items.addAll(items)
         notifyDataSetChanged()
         return this.items.size
+    }
+
+    private fun formatMoney(price: Double): String {
+        val formatter = NumberFormat.getCurrencyInstance()
+        with(formatter) {
+            currency = Currency.getInstance("USD")
+        }
+        return formatter.format(price)
     }
 }
 
