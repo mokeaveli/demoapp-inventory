@@ -91,14 +91,18 @@ class MainActivity : AppCompatActivity(), DittoManager.ItemUpdateListener {
             R.id.show_information_view -> {
                 showInformationView(); true
             }
-
             R.id.show_ditto_tools -> {
                 showDittoTools(); true
             }
-
+            R.id.search_inventory -> {
+                val intent = Intent(this, SearchActivity::class.java)
+                startActivity(intent)
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 
     private fun showInformationView() {
         val intent = DittoManager.sdkVersion?.let { DittoInfoListActivity.createIntent(this, it) }

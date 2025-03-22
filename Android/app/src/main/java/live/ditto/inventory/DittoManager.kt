@@ -7,6 +7,15 @@ import live.ditto.android.DefaultAndroidDittoDependencies
 
 object DittoManager {
 
+    // Make COLLECTION_NAME public instead of private
+    const val COLLECTION_NAME = "inventories"
+
+    // Add a function to access itemsForView
+    fun getItemsForView(): Array<ItemModel> {
+        return itemsForView
+    }
+
+
 
     /* Interfaces */
     interface ItemUpdateListener {
@@ -24,7 +33,7 @@ object DittoManager {
 
 
     /* Private properties */
-    private const val COLLECTION_NAME = "inventories"
+
     private var collection: DittoCollection? = null
 
     private var subscription: DittoSyncSubscription? = null

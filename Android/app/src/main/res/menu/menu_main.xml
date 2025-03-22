@@ -13,6 +13,11 @@
         app:showAsAction="never" />
 -->
     <item
+        android:id="@+id/search_inventory"
+        android:title="Search Inventory"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/show_ditto_tools"
         android:title="@string/show_presence_view"
         app:showAsAction="never" />
